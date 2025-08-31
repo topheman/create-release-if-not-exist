@@ -1,9 +1,9 @@
 name: "Create Release If Not Exist"
-description: "Create a GitHub release draft if it doesn't exist"
+description: "Creates a GitHub release if it doesn't exist"
 author: "topheman"
 inputs:
   args:
-    description: "Arguments to pass to the create-release-if-not-exist.sh script"
+    description: "Arguments you would pass to `gh release create` command that will run if the release doesn't exist"
     required: true
 runs:
   using: "composite"
@@ -12,7 +12,7 @@ runs:
       shell: bash
       run: $GITHUB_ACTION_PATH/scripts/create-release-if-not-exist.sh ${{ inputs.args }}
       env:
-        GH_TOKEN: ${{ env.GH_TOKEN }}
+        GH_TOKEN: ${{ github.token }}
 branding:
   icon: "tag"
   color: "blue"
