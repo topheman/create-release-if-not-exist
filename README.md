@@ -1,8 +1,8 @@
 # topheman/create-release-if-not-exist
 
-This GitHub Action that creates a release if it doesn't exist.
+This GitHub Action creates a release if it doesn't exist.
 
-You can pass any arguments you would pass to `gh release create` command that will run if the release doesn't exist.
+You can pass any arguments you would pass to [`gh release create`](https://cli.github.com/manual/gh_release_create) command that will run if the release doesn't exist.
 
 ## Usage
 
