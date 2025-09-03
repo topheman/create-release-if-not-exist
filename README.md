@@ -13,8 +13,11 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: Create release draft if not exist
         uses: topheman/create-release-if-not-exist@v1
         with:
           args: "${{ github.ref_name }} --draft --generate-notes"
 ```
+
+**Note:** Do not forget the `actions/checkout@v4` step, it is needed to have a git repository (use `git` commands in the action).
