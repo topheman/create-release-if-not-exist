@@ -21,3 +21,12 @@ jobs:
 ```
 
 **Note:** Do not forget the `actions/checkout@v4` step, it is needed to have a git repository (use `git` commands in the action).
+
+## Related Actions
+
+- [topheman/update-homebrew-tap](https://github.com/topheman/update-homebrew-tap)
+
+## Used By
+
+- [topheman/webassembly-component-model-experiments](https://github.com/topheman/webassembly-component-model-experiments)
+- [topheman/update-homebrew-tap-playground](https://github.com/topheman/update-homebrew-tap-playground)
